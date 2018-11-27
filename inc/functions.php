@@ -51,9 +51,8 @@ function getRandomQuote($quotes) {
 function printQuote($quotes) {
   $quoteVar = getRandomQuote($quotes);
  
-{
-    echo "<p class=\"quote\">" . $quotes['quote'] . "</p>" . "<p class=\"source\">" . $quotes['source'] . "</p>";
-     } 
+    echo "<p class=\"quote\">" . $quoteVar['quote'] . "</p>" . "<p class=\"source\">" . $quoteVar['source'] . "</p>";
+     
 	if(array_key_exists($quoteVar['citation']))	{
       echo "<p class=\"quote\">" . $quoteVar['quote'] . "</p>" . "<p class=\"source\">" . $quoteVar['source'] . "</p>" . "<p class=\"citation\">" . $quoteVar['citation'] . "</p>";
 	}
@@ -62,6 +61,6 @@ function printQuote($quotes) {
 	};
   echo $emptyString;
 }; 
-printQuote($quotes);
+
 
 ?>
