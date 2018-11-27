@@ -36,7 +36,6 @@ $quotes[] = [
 Referenced PHP Basics: Practical projects: Random quote generator https://www.youtube.com/watch?v=NB3zMWwRJQ0 Codecourse
 Published on Nov 14, 2016
 */
-//Created getRandomQuote() function
 
 function getRandomQuote($quotes) {
   $randomQuote = $quotes[rand(0, count($quotes) - 1)];
@@ -45,11 +44,12 @@ function getRandomQuote($quotes) {
 
 //Got help from Kirby Kuelh on printQuote function
 // Created printQuote() function
-// Created empty string
 
 function printQuote($quotes) {
   $quoteVar = getRandomQuote($quotes);
  
+//Output the required content of quote and source using ech
+
     echo "<p class=quote>" . $quoteVar['quote'] . "</p>"; 
     echo "<p class=source>" . $quoteVar['source'];
 
@@ -59,6 +59,7 @@ function printQuote($quotes) {
 	if(isset($quoteVar['citation']))	{
       echo "<span class=citation>" . $quoteVar['citation'] . "</span>";
 	}
+	if(isset($quoteVar['year']))	{
     echo "<span class=year>" . $quoteVar['year'] . "</span>" . "</p>";
 	};
  
