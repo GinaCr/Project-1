@@ -25,7 +25,7 @@ $quotes[] = [
   'year' => " 2002 "
 ];
 $quotes[] = [
-  'quote' => "You're off to great places! Today is your day! Your mountain is waiting. So on your way! ",
+  'quote' => "You're off to great places! Today is your day! Your mountain is waiting. So get on your way! ",
   'source' => " Dr. Seuss",
     'citation' => " Oh, The Places You'll Go!",
   'year' => " 1990"
@@ -43,7 +43,7 @@ function getRandomQuote($quotes) {
   };
 
 //Got help from Kirby Kuelh on printQuote function
-// Created printQuote() function
+//Created printQuote() function
 
 function printQuote($quotes) {
   $quoteVar = getRandomQuote($quotes);
